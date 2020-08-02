@@ -21,7 +21,3 @@ print('\\t') # Hier gilt dasselbe, wie oben: zweimal das Backslash-Zeichen, und 
 # Der Befehl geht einfach in der nächsten Zeile weiter:
 print('Mein Bildschirm ist\
 klein!')
-
-# Alternativ kann man auch die praktische Syntax nutzen:
-print('Mein Bildschirm ist
-klein!')

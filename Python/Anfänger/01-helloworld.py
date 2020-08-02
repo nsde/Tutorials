@@ -18,6 +18,6 @@ print('Eingerückter\tText') # "\n" definiert eine Tabulatortaste, die einen kle
 print('\\t') # Hier gilt dasselbe, wie oben: zweimal das Backslash-Zeichen, und schon können wir den Text "\t" ohne Zeilenumbruch schreiben.
 
 # Wenn man zu wenig Platz auf dem Bildschirm hast, wird unter anderem das "\"-Zeichen verwendet, und den Code übersichtlicher zu gestalten.
-# Der Befehl geht einfach in der nächsten Zeile weiter:
+# Der Befehl geht einfach in der nächsten Zeile weiter, wird aber in einer Zeile ausgegeben:
 print('Das ist ein \
 Test!')

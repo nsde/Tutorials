@@ -19,5 +19,5 @@ print('\\t') # Hier gilt dasselbe, wie oben: zweimal das Backslash-Zeichen, und 
 
 # Wenn man zu wenig Platz auf dem Bildschirm hast, wird unter anderem das "\"-Zeichen verwendet, und den Code übersichtlicher zu gestalten.
 # Der Befehl geht einfach in der nächsten Zeile weiter:
-print('Mein Bildschirm ist\
-klein!')
+print('Das ist ein \
+Test!')

@@ -2,8 +2,7 @@ from random import randint as rdi
 
 users = []
 pws = []
-global id
-id = 99999
+userid = 99999
 inp = ''
 notes = []
 
@@ -11,11 +10,11 @@ def login():
     user = inp.split()
     user = user[1]
     if user in users:
-        id = users.index(user)
+        userid = users.index(user)
         print('Type in password')
         pw = input('>')
-        if pws[id] == pw:
-            print(f'Logged in as id {id}. Welcome, "{user}"!')
+        if pws[userid] == pw:
+            print(f'Logged in as userid {userid}. Welcome, "{user}"!')
         else:
             print('Wrong password.')
     else:
@@ -41,22 +40,24 @@ def create():
 def logout():
     user = ''
     pw = ''
-    id = 9999
+    userid = 9999
     return user, pw
 
 def editnote():
     note = inp.split()
     note = note[1]
+    print(userid)
+    print(type(userid))
     try:
-        id = int(id)
-        notes[id] = note
+        userid = int(userid)
+        notes[userid] = note
     except:
         print('[ERROR] Sorry, you don\'t have the permissons to edit your note.')
 
 def readnote():
     try:
-        id = int(id)
-        note = notes[id]
+        userid = int(userid)
+        note = notes[userid]
         print(f'Your note:\n"{note}".')
     except:
         print('[ERROR] Sorry, you don\'t have access to your notes.')

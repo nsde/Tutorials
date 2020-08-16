@@ -13,7 +13,7 @@ Die Tutorials sind für DICH und alle, die auch am Programmieren Interessiert si
 ***
 
  ### Anfänger
-Alles, was man zum Einsteigen braucht: z.B. **Syntax**, **der Umgang mit Fehlern** und einiges mehr. Fallst du z.B. im Informatikunterricht hast, kannst du gerne hier reinschauen und stöbern.
+Alles, was man zum Einsteigen braucht: z.B. **Syntax**, **der Umgang mit Fehlern** und einiges mehr. Fallst du z.B. im Informatikunterricht Probleme hast, kannst du gerne hier reinschauen und stöbern.
 
  ### Fortgeschrittene
  Hier werden unter Anderem **Erweiterungen**, **Add-ons**, **Plugins** oder **Module** genauer erläutert. Wenn du nicht nur die Sprache lernen willst, sondern auch interesannte Projekte erstellen möchtest, bist du hier bestens bedient.

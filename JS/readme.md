@@ -1,2 +1,2 @@
-In den folgenden Tutorials lernst du das Programmieren mit JavaScript! Wir wünschen dir viel Spaß dabei.
+In den folgenden Tutorials lernst du das Programmieren mit JavaScript! Mit der Sprache kann man unter anderem Webapplikatioenen programmieren, aber seh' dir bitte die [Tutorialserie zu HTML](https://github.com/nsde/Tutorials/tree/master/HTML-CSS) (und auch etwas CSS, damit es nicht so hässlich aussieht) an, wenn du es noch nicht getan hast! Sonst wirst du nicht wirklich in der Lage sein, uns zu folgen. Wir wünschen dir viel Spaß beim Programmieren.
 *-Team Styx*

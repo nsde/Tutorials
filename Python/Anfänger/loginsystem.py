@@ -2,12 +2,12 @@ from random import randint as rdi
 
 users = []
 pws = []
+global id
+id = 99999
 inp = ''
 notes = []
 
 def login():
-    print(users)
-    print(pws)
     user = inp.split()
     user = user[1]
     if user in users:
@@ -15,7 +15,7 @@ def login():
         print('Type in password')
         pw = input('>')
         if pws[id] == pw:
-            print(f'Logged in. Welcome, "{user}"!')
+            print(f'Logged in as id {id}. Welcome, "{user}"!')
         else:
             print('Wrong password.')
     else:
@@ -41,20 +41,32 @@ def create():
 def logout():
     user = ''
     pw = ''
+    id = 9999
     return user, pw
 
-def note():
-    pass
+def editnote():
+    note = inp.split()
+    note = note[1]
+    try:
+        id = int(id)
+        notes[id] = note
+    except:
+        print('[ERROR] Sorry, you don\'t have the permissons to edit your note.')
 
 def readnote():
     try:
-        print('')
+        id = int(id)
+        note = notes[id]
+        print(f'Your note:\n"{note}".')
     except:
         print('[ERROR] Sorry, you don\'t have access to your notes.')
 
 
 while 1:
-    print('login <user> or create <user>')
+    print('===[HELP]===\nCommands:\nlogin <user>\tlogin to an existing account\
+        \ncreate <user>\tcreate a new user\nlogout\t\tlog out from your account\
+        \neditnote\tedit your note\
+        \nreadnote\tread your note\n=========')
     inp = input('>')
     if inp.startswith('login'):
         login()
@@ -62,9 +74,9 @@ while 1:
         create()
     elif inp.startswith('logout'):
         logout()
-    elif inp.startswith('createnote'):
-        note()
+    elif inp.startswith('editnote'):
+        editnote()
     elif inp.startswith('readnote'):
         readnote()
     else:
-        print('[ERROR] Command not found.')
+        print(f'[ERROR] Command "{inp}" not found.')

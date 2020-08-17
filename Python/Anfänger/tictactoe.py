@@ -18,12 +18,16 @@ def run():
         player = 1
         playersymbol = 'O'
 
-    for i in range(9):
-        print(end=l[i])
+    item = 0
+    for _ in range(3):
+        for _ in range(3):
+            print(end=l[item])
+            item += 1
+        print(end='\n')
     print(end='\n')
 
     inp = input(f'\n[P{player}] ')
-    l[int(inp)+1] = playersymbol
+    l[int(inp)-1] = playersymbol
 
 # print tictactoe
 

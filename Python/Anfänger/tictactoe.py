@@ -6,28 +6,24 @@ import sys
 l = ['-','-','-','-','-','-','-','-','-']
 
 end = False
+player = 0
 
 def run():
-    for row in range(3):
-        for col in range(3):
-            print(end=l[col])
-        print(end='\n')
+    global player
 
-    inp = input('\n>')
+    if player == 1:
+        player = 2
+        playersymbol = 'X'
+    else:
+        player = 1
+        playersymbol = 'O'
 
-    try:
-        inp = int(inp)
-        if inp > -1 and inp < 9:
-            pass
-        else:
-            print(Error)
+    for i in range(9):
+        print(end=l[i])
+    print(end='\n')
 
-    except:
-        if inp == 'end':
-            end = True
-            return end
-        else:
-            print('ERROR')
+    inp = input(f'\n[P{player}] ')
+    l[int(inp)+1] = playersymbol
 
 # print tictactoe
 

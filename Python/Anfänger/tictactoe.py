@@ -1,3 +1,5 @@
+# local singleplayer ttt
+
 from random import randint as rdi
 import sys
 

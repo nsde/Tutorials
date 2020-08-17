@@ -3,14 +3,15 @@
 from random import randint as rdi
 import sys
 
+# standard ttt list
 l = ['-','-','-','-','-','-','-','-','-']
 
 end = False
 player = 0
 
 def run():
+# player settings
     global player
-
     if player == 1:
         player = 2
         playersymbol = 'X'
@@ -18,6 +19,7 @@ def run():
         player = 1
         playersymbol = 'O'
 
+# print
     item = 0
     for _ in range(3):
         for _ in range(3):
@@ -26,11 +28,17 @@ def run():
         print(end='\n')
     print(end='\n')
 
+# input
     inp = input(f'\n[P{player}] ')
-    l[int(inp)-1] = playersymbol
+    try:
+        if l[int(inp)-1] == '-':
+            l[int(inp)-1] = playersymbol
+        else:
+            print('REPLACE ERROR - Replacing is against the rules of TicTacToe!')
+    except:
+        print('INPUT ERROR - Input is a invalid number!')
 
-# print tictactoe
-
+# loop
 while 1:
     if end:
         sys.exit(0)

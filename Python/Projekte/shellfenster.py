@@ -1,4 +1,4 @@
 # SHELL-FENSTER MIT TKINTER
 while 1:
-    i = input('>')
+    i = input(">")
     exec(i)

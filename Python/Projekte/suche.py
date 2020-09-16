@@ -5,6 +5,11 @@ punkte = []
 anfrage = input(">")
 anfrage = anfrage.lower()
 
+letter_whitelist = "abcdefghijklmnopqrstuvwxyz0123456789_-."
+
+for _ in range(len(ok)):
+    if anfrage.find
+
 # Punkte berechnen
 
 elementno = 0
@@ -17,11 +22,18 @@ for element in elemente:
     if anfrage.startswith(element):
         punkte_zahl += 10
 
+    if anfrage.endswith(element):
+        punkte_zahl += 10
+
+    if anfrage(element):
+        punkte_zahl += 10
+
     for _ in range (len(anfrage)):
         punkte_zahl += element.count(anfrage[letterno])
         letterno += 1
-
-    punkte.append(punkte_zahl*(1-(len(element)*0.05)))
+    
+    punkte_fertig = punkte_zahl*(1-(len(element)*0.05))
+    punkte.append(punkte_fertig)
 
     elementno += 1
 
@@ -29,12 +41,17 @@ for element in elemente:
 sortiert = list(zip(*sorted(list(zip(punkte, elemente)), reverse=True))) # Danke an DELTA und LoC (TheMorpheusTutorials' Discord) für die Hilfe <3
 
 # Endausgabe
+print(sortiert)
 sortiert = sortiert[1]
-out = sortiert[:20]
-out =
+sortiert = sortiert[:20]
+out = []
+for umw in sortiert:
+    out.append(umw)
 
+num = 0
 for outnum in out:
-    if punkte[elemente.index(outnum)] > 0:
+    if punkte[num] > 7:
         out.append(outnum)
-print("opf")
+
+    num += 1
 print(out)

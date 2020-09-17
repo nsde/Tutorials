@@ -49,8 +49,8 @@ for element in elemente:
         punkte_zahl += element.count(anfrage[letterno])
         letterno += 1
     
-    punkte_fertig = punkte_zahl*(1-(len(element)*0.05))
-    punkte.append(punkte_fertig)
+    punkte_berechnet = 100/len(anfrage)*punkte_zahl
+    punkte.append(punkte_berechnet)
 
     elementno += 1
 
@@ -58,7 +58,7 @@ for element in elemente:
 sortiert = list(zip(*sorted(list(zip(punkte, elemente)), reverse=True))) # Danke an DELTA und LoC (TheMorpheusTutorials' Discord) für die Hilfe <3
 
 # Endausgabe
-# print(sortiert[0])
+print(sortiert[0])
 sortiert = sortiert[1]
 sortiert = sortiert[:10]
 out = []
@@ -67,7 +67,7 @@ for umw in sortiert:
 
 num = 0
 for outnum in out:
-    if punkte[num] > 10:
+    if punkte[num] > 50:
         try:
             x = out.index(outnum)
         except:
@@ -75,3 +75,6 @@ for outnum in out:
 
     num += 1
 print(out)
+
+# 5 = 100%
+# 3 = 100/5*3
